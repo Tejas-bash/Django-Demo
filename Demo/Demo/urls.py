@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from App.views import Newproject
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',Newproject.as_view(),name='Tejas'),
 ]
