@@ -1,3 +1,6 @@
 from django.contrib import admin
+from App.models import DemoForm
 
-# Register your models here.
+@admin.register(DemoForm)
+class DemoAdminPanel(admin.ModelAdmin):
+    list_display = ['Name']
