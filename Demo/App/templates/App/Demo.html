@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    {{data}}
-    {{data.Tejas}}
-    {{data.Age}}
+<form action="" method="post">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
